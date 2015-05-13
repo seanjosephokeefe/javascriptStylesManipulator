@@ -1,0 +1,193 @@
+﻿body {
+    background-color: #fd5c68;
+    font-family: Calibri, Arial;
+    color: black;
+    padding: 10px 30px 10px 30px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type=button] {
+    background-color: #f99ca3;
+    border: 2px #fd5c68 solid;
+    color: black;
+    padding: 4px 6px 4px 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+    input[type=button]:hover {
+        background-color: #fd5c68;
+        border: 2px #f99ca3 solid;
+        color: white;
+        padding: 4px 6px 4px 6px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    input[type=button].grayButton {
+        background-color: #778899;
+        border: 2px black solid;
+        color: white;
+        padding: 4px 6px 4px 6px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+        input[type=button].grayButton:hover {
+            background-color: black;
+            border: 2px #778899 solid;
+            color: white;
+            padding: 4px 6px 4px 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+a, a:visited {
+    text-decoration: underline;
+    color: #1f5d5e;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #26a0a2;
+    }
+
+#DivContainer {
+    border: 2px black solid;
+    background-color: whitesmoke;
+    padding: 10px 20px 10px 20px;
+}
+
+#DivFont {
+    border: 1px solid #fd5c68;
+    color: maroon;
+    background-color: whitesmoke;
+    padding: 3px 10px 3px 10px;
+}
+
+#PText {
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#DivImageContainer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#DivImage {
+    border: 3px solid #778899;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+#DivMinus {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#DivPlus {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#DivGrowOrShrink {
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px orange solid;
+    background-color: silver;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height:100px;
+    text-align: center;
+}
+
+#DivChangeDivTextColor {
+    font-family: Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px orange solid;
+    background-color: silver;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 20px 20px;
+    width: 300px;
+}
+
+#TblImages {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#DivFontChange {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px orange solid;
+    background-color: silver;
+    width: 740px;
+    padding: 0px 20px 6px 20px;
+}
+
+.divButtons {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.sectionDiv {
+    border: 1px #778899 solid;
+    background-color: white;
+    padding: 4px 10px 4px 10px;
+    display: none;
+}
+
+.infoSpan {
+    color: maroon;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.green {
+    color: #75b086;
+}
+
+.blue {
+    color: #496db0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.spnFont {
+    color: orange;
+    font-weight: bolder;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+    text-align:center;
+}

@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dumb JavaScript Styler</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <div id="DivContainer">
+        <h2>Dumb JavaScript Style Manipulator</h2>
+        <div id="Div1" class="sectionDiv">
+            <h2>Change Background Color</h2>
+            <h3>Using JavaScript</h3>
+            <p>
+                document.getElementById("<span class="underline italic">ID OF ELEMENT</span>").style.color = <span class="underline italic">COLOR</span>;
+            </p>
+            <p>
+                document.getElementById("<span class="underline italic">ID OF ELEMENT</span>").style.backgroundColor = <span class="underline italic">COLOR</span>;
+            </p>
+            <h3>Using JQuery</h3>
+            <p>
+                $("#<span class="underline italic">ID OF ELEMENT</span>").css("background-color", "<span class="underline italic">COLOR</span>");
+            </p>
+            <p>
+                $("#<span class="underline italic">ID OF ELEMENT</span>").css("color", "<span class="underline italic">COLOR</span>");
+            </p>
+            <h3>
+                You can also daisy-chain the properties with JQuery:
+            </h3>
+            <p>
+                $("#<span class="underline italic">ID OF ELEMENT</span>").css("color" : "<span class="underline italic">COLOR 1</span>", "background-color" : "<span class="underline italic">COLOR 2</span>");
+            </p>
+            <div id="DivChangeColor" class="divButtons">
+                <input id="BtnCngColor1" name="pink,blue,JS" value="Blue BG - Pink Color JS" type="button" class="grayButton" />
+                <input id="BtnCngColor2" name="white,black,JQ" value="Black BG - White Color JQ" type="button" class="grayButton" />
+                <input id="BtnCngColor3" name="maroon,white,JS" value="White BG - Maroon Color JS" type="button" class="grayButton" />
+                <input id="BtnCngColor4" name="black,red,JQ" value="Red BG - Black Color JQ" type="button" class="grayButton" />
+                <input id="BtnCngColor5" name="yellow,gray,JS" value="Gray BG - Yellow Color JS" type="button" class="grayButton" />
+            </div>
+        </div>
+        <div id="Div2" class="sectionDiv">
+            <h2>Change Font-Size</h2>
+            <div id="DivFont">
+                <p class="blue bold">
+                    Font-Family:&nbsp;<span id="SpnFontFamily" class="spnFont">Times New Roman</span>&nbsp;&nbsp;&nbsp;&nbsp;Font-Size:&nbsp;<span id="SpnFontSize" class="spnFont">14px</span>&nbsp;&nbsp;&nbsp;&nbsp;Font-Weight:&nbsp;<span id="SpnFontWeight" class="spnFont">normal</span>
+                <p id="PText">Cupcake ipsum dolor sit. Amet caramels chocolate jelly powder liquorice jelly-o chocolate cake croissant. Powder applicake oat cake. Gingerbread ice cream jelly-o. Pastry tart ice cream chocolate cake oat cake bonbon biscuit oat cake. Carrot cake cake powder. Pastry muffin jelly beans muffin sesame snaps fruitcake jelly biscuit unerdwear.com. Oat cake liquorice dragée applicake jujubes biscuit pie chocolate topping. Wafer fruitcake muffin unerdwear.com pudding powder chocolate cake dragée. Jelly chupa chups carrot cake bonbon caramels tootsie roll croissant topping. Danish cupcake dessert marshmallow. Tart candy jelly. Liquorice cupcake biscuit. Jelly beans danish unerdwear.com biscuit halvah.</p>
+            </div>
+            <h3>Using JavaScript</h3>
+            <p>
+                document.getElementById("<span class="underline italic">ID OF ELEMENT</span>").style.fontSize = <span class="underline italic">SIZE</span>; <span class="green">// in pixels [pt, px, em, %] 10.5pt =  14px = 0.875em = 87.5%</span>
+            </p>
+            <p>
+                document.getElementById("<span class="underline italic">ID OF ELEMENT</span>").style.fontWeight = <span class="underline italic">WEIGHT</span>; <span class="green">// [normal (400), bold (700), number (100 - 900)]</span>
+            </p>
+            <p>
+                document.getElementById("<span class="underline italic">ID OF ELEMENT</span>").style.fontFamily = <span class="underline italic">FAMILY-NAME</span>;
+            </p>
+            <h3>Using JQuery</h3>
+            <p>
+                $("#<span class="underline italic">ID OF ELEMENT</span>").css("font-size", "<span class="underline italic">SIZE</span>"); <span class="green">// in pixels [pt, px, em, %] 14.5pt =  20px = 1.25em = 125%</span>
+            </p>
+            <p>
+                $("#<span class="underline italic">ID OF ELEMENT</span>").css("font-weight", "<span class="underline italic">WEIGHT</span>"); <span class="green">// [normal (400), bold (700), number (100 - 900)]</span>
+            </p>
+            <p>
+                $("#<span class="underline italic">ID OF ELEMENT</span>").css("font-family", "<span class="underline italic">FAMILY-NAME</span>");
+            </p>
+            <h3>
+                You can also daisy-chain the properties with JQuery:
+            </h3>
+            <p>
+                $("#<span class="underline italic">ID OF ELEMENT</span>").css("font-size" : "<span class="underline italic">SIZE</span>", "font-weight" : "<span class="underline italic">WEIGHT</span>", "font-family" : "<span class="underline italic">FAMILY-NAME</span>");
+            </p>
+            <div id="DivFontChange">
+            <table>
+                <tr>
+                    <td><p>Choose Font Family:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td>
+                        <p>Choose Font Size:</p>
+                    </td>
+                    <td>
+                        <p>Choose Font Weight:</p>
+                    </td>
+                    <td>
+                        <p>Choose Method:</p>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="DDFontFamily">
+                            <option value="Arial">Arial</option>
+                            <option value="Calibri">Calibri</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                            <option value="Tahoma">Tahoma</option>
+                            <option value="Times New Roman" selected="selected">Times New Roman</option>
+                        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <select id="DDFontSize">
+                            <option value="8px">8 px</option>
+                            <option value="10px">10 px</option>
+                            <option value="12px">12 px</option>
+                            <option value="14px" selected="selected">14 px</option>
+                            <option value="16px">16 px</option>
+                            <option value="18px">18 px</option>
+                            <option value="20px">20 px</option>
+                            <option value="22px">22 px</option>
+                            <option value="24px">24 px</option>
+                            <option value="26px">26 px</option>
+                            <option value="28px">28 px</option>
+                            <option value="0.5em">0.5 em</option>
+                            <option value="1.0em">1.0 em</option>
+                            <option value="1.5em">1.5 em</option>
+                            <option value="2.0em">2.0 em</option>
+                            <option value="2.5em">2.5 em</option>
+                            <option value="8pt">8 pt</option>
+                            <option value="10pt">10 pt</option>
+                            <option value="12pt">12 pt</option>
+                            <option value="14pt">14 pt</option>
+                            <option value="16pt">16 pt</option>
+                            <option value="18pt">18 pt</option>
+                            <option value="20pt">20 pt</option>
+                            <option value="22pt">22 pt</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="DDFontWeight">
+                            <option value="normal" selected="selected">normal</option>
+                            <option value="bold">bold</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                            <option value="600">600</option>
+                            <option value="700">700</option>
+                            <option value="800">800</option>
+                            <option value="900">900</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="DDFontChangeMethod">
+                            <option value="JS">JavaScript</option>
+                            <option value="JQ">JQuery</option>
+                        </select>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="BtnCngFont" value="Change It Up" type="button" /></td>
+                </tr>
+            </table>
+            </div>
+            <br />
+        </div>
+        <div id="Div3" class="sectionDiv">
+            <h3>Change Images using JQuery</h3>
+            <div id="DivImageContainer">
+                <table id="TblImages">
+                    <tr>
+                        <td><div id="DivMinus" class="manipulatePhotoImage"><img src="images/minus.png" /></div></td>
+                        <td><div id="DivImage"><img id="ImgToChg" src="images/Fish1.png" /></div></td>
+                        <td><div id="DivPlus" class="manipulatePhotoImage"><img src="images/plus.png" /></div></td>
+                    </tr>
+                </table>
+                <p class="center">Current Image is: <span id="SpnCurrentFish" class="infoSpan" >Fish1.png</span></p>
+<p class="center">To Change an image using JavaScript and JQuery:</p>
+                <p class="center">JavaScript: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("<span class="underline italic">ID_OF_IMAGE_ELEMENT</span>").src="<span class="underline italic">PATH_TO_IMAGE_INCLUDING_THE_EXTENSION</span>";</p>
+                <p class="center">JQuery: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#<span class="underline italic">ID_OF_IMAGE_ELEMENT</span>").attr("src", "<span class="underline italic">PATH_TO_IMAGE_INCLUDING_THE_EXTENSION</span>");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div id="DivChangeImage" class="divButtons">
+                <input id="BtnImage1" name="1" value="Image 1" type="button" class="grayButton" />
+                <input id="BtnImage2" name="2" value="Image 2" type="button" class="grayButton" />
+                <input id="BtnImage3" name="3" value="Image 3" type="button" class="grayButton" />
+                <input id="BtnImage4" name="4" value="Image 4" type="button" class="grayButton" />
+                <input id="BtnImage5" name="5" value="Image 5" type="button" class="grayButton" />
+                <input id="BtnSurpriseMe" name="6" value="Surprise Me" type="button" class="grayButton" />
+            </div>
+        </div>
+        <div id="Div4" class="sectionDiv">
+            <p>Change Color: Mouseover [JQuery Only], Current Color: <span class="infoSpan" id="SpnCurrentDivColor">black</span></p>
+            <br />
+            <div id="DivChangeDivTextColor">Change my font-color randomly to either black, blue, red, maroon, or white.</div>
+            <br />
+        </div>
+        <div id="Div5" class="sectionDiv">
+            <p>Div Grow or Shrink [JQuery Only], Current Mode: <span class="infoSpan" id="SpnCurrentDivGrowOrShrink">Grow</span></p>
+            <div class="divButtons">
+                <input id="BtnGrow" value="Grow on Div Click" type="button" class="grayButton" />
+                <input id="BtnShrink" value="Shrink on Div Click" type="button" class="grayButton" />
+            </div>
+            <div id="DivGrowOrShrinkMessage" class="error"></div>
+            <br />
+            <div id="DivGrowOrShrink">Click<br />On Me !!!</div>
+            <br />
+        </div>
+        <br />
+        <div id="DivButtonsSelectDiv" class="divButtons">
+            <input id="BtnOpenDiv1" name="Div1" type="button" value="Setting Colors" />
+            <input id="BtnOpenDiv2" name="Div2" type="button" value="Change Font" />
+            <input id="BtnOpenDiv3" name="Div3" type="button" value="Working With Images" />
+            <input id="btnopendiv4" name="Div4" type="button" value="Change Color: Mouseover [JQuery]" />
+            <input id="btnopendiv5" name="Div5" type="button" value="Div Grow or Shrink [JQuery]" />
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+</html>
